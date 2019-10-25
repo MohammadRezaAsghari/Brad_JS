@@ -15,11 +15,32 @@
 <body>
 
     <script>
-        let nav = window.navigator;
-        console.log(nav.platform);
-        console.log(nav.userAgent);
-        console.log(nav.appName);
-        console.log(nav.appVersion);
+        var a = 1;
+        let b = 2;
+        const c = 3;
+        
+
+
+        // function myFuntion() {
+        // var a = 4;
+        // let b = 5;
+        // const c = 6;
+        // console.log(`functin scope: a : ${a} b: ${b} c: ${c}`);
+        // }
+        // myFuntion();
+
+        if(true){
+        var a = 4;
+        let b = 5;
+        const c = 6;
+        console.log(`block  scope: a : ${a} b: ${b} c: ${c}`);
+        }
+        for (var a=0 ; a<=10 ; a++){
+            console.log(`a ==> ${a}`);
+        }
+
+
+        console.log(`global scope: a : ${a} b: ${b} c: ${c}`);
     </script>
 
 </body>
