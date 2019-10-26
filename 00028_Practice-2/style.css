@@ -1,0 +1,26 @@
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    animation: bubble .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(15);
+        opacity: 0;
+    }
+}

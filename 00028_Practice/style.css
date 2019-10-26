@@ -1,0 +1,24 @@
+.btn {
+    transition-property: width, background-color;
+    transition-duration: 1s;
+}
+
+.preloader {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    border-right: none;
+    border-bottom: none;
+    animation: preload 1s linear infinite;
+}
+
+@keyframes preload {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
