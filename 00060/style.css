@@ -1,0 +1,31 @@
+.loader{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.loader span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: coral;
+    margin: 0px 5px;
+    animation: fadeToggle .5s infinite linear;
+    animation-direction: alternate;
+}
+.loader span:nth-child(2){
+    background-color: blueviolet;
+    animation-delay: .5s;
+}
+.loader span:nth-child(3){
+    background-color: cadetblue;
+    animation-delay: 1s;
+}
+@keyframes fadeToggle{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
